@@ -32,3 +32,28 @@ body {
 #app {
 	padding: 1em;
 }
+
+.encadre {
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: .5em;
+	box-shadow: .1em .1em .3em hsla(0, 0%, 0%, .5);
+	background-color:  hsl(0, 0%, 90%);
+}
+
+.important {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: red;
+}
+.rouge {
+	color: red;
+}
+.geant {
+	font-size: 5em;
+	font-weight: bold;
+	text-shadow: .1em .1em .3em hsla(0, 0%, 0%, .5);
+}
+.actif {
+	font-weight: bold;
+}

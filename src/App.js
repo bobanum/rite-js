@@ -17,21 +17,6 @@ class App {
 		var app, titre, soustitre, intertitre, paragraphe;
 		app = document.getElementById("app");
 		
-		titre = document.createElement("h1");
-		app.appendChild(titre);
-		titre.innerHTML = "Ceci est un H1";
-		
-		soustitre = document.createElement("h2");
-		app.appendChild(soustitre);
-		soustitre.innerHTML = "Ceci est un H2";
-		
-		intertitre = document.createElement("h3");
-		app.appendChild(intertitre);
-		intertitre.innerHTML = "Ceci est un H3";
-		
-		paragraphe = document.createElement("p");
-		app.appendChild(paragraphe);
-		paragraphe.innerHTML = "Ceci est un P. Lorem ipsum dolor sit amet";
 	}
 	/**
 	 * Étape 2 : Les attributs
@@ -51,22 +36,6 @@ class App {
 		var app, titre, image, lien;
 		app = document.getElementById("app");
 		
-		titre = document.createElement("h1");
-		app.appendChild(titre);
-		titre.innerHTML = "Voici le favicon";
-		titre.setAttribute("class", "geant encadre")
-		titre.setAttribute("style", "text-align:center;")
-		
-		image = document.createElement("img");
-		app.appendChild(image);
-		image.setAttribute("src", "favicon.ico");
-		image.setAttribute("alt", "Le favicon");
-
-		lien = document.createElement("a");
-		app.appendChild(lien);
-		lien.innerHTML = "Aller ailleurs";
-		lien.setAttribute("href", "https://facebook.com");
-		lien.setAttribute("target", "_blank");
 	}
 	/**
 	 * Étape 3 : Classes et styles
@@ -84,30 +53,6 @@ class App {
 		var app, titre, soustitre, intertitre, paragraphe;
 		app = document.getElementById("app");
 		
-		titre = document.createElement("h1");
-		app.appendChild(titre);
-		titre.innerHTML = "Ceci est tout un H1";
-		titre.classList.add("geant");
-		titre.classList.add("encadre");
-		titre.style.textAlign = "center"
-		
-		soustitre = document.createElement("h2");
-		app.appendChild(soustitre);
-		soustitre.innerHTML = "Ceci est un H2 stylisé";
-		soustitre.style.color = "blue";
-		soustitre.style.borderBottom = "1px solid";
-		
-		intertitre = document.createElement("h3");
-		app.appendChild(intertitre);
-		intertitre.innerHTML = "Ceci est un H3 important";
-		intertitre.classList.add("important");
-		
-		paragraphe = document.createElement("p");
-		app.appendChild(paragraphe);
-		paragraphe.innerHTML = "Ceci est un P complet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit culpa rerum saepe! Perspiciatis, ratione. Natus, necessitatibus laudantium molestias fugit similique, assumenda sequi est, aliquid eligendi illo a voluptate eos?";
-		paragraphe.style.fontFamily = "cursive";
-		paragraphe.style.width = "4in";
-		paragraphe.style.margin = "0 auto";
 	}
 	/**
 	 * Étape 4 : Imbrication
@@ -131,50 +76,6 @@ class App {
 		var app, form, select, option;
 		app = document.getElementById("app");
 
-		form = document.createElement("form");
-		app.appendChild(form);
-		form.style.border = "2px dashed red";
-		form.style.padding = "1em";
-		
-		select = document.createElement("select");
-		form.appendChild(select);
-		select.setAttribute("size", 7);
-		
-		option = document.createElement("option");
-		select.appendChild(option);
-		option.setAttribute("value", "dim");
-		option.innerHTML = "Dimanche"
-		
-		option = document.createElement("option");
-		select.appendChild(option);
-		option.setAttribute("value", "lun");
-		option.innerHTML = "Lundi"
-		
-		option = document.createElement("option");
-		select.appendChild(option);
-		option.setAttribute("value", "mar");
-		option.innerHTML = "Mardi"
-		
-		option = document.createElement("option");
-		select.appendChild(option);
-		option.setAttribute("value", "mer");
-		option.innerHTML = "Mercredi"
-		
-		option = document.createElement("option");
-		select.appendChild(option);
-		option.setAttribute("value", "jeu");
-		option.innerHTML = "Jeudi"
-		
-		option = document.createElement("option");
-		select.appendChild(option);
-		option.setAttribute("value", "ven");
-		option.innerHTML = "Vendredi"
-		
-		option = document.createElement("option");
-		select.appendChild(option);
-		option.setAttribute("value", "sam");
-		option.innerHTML = "Samedi"
-		
 	}
 	/**
 	 * Méthode qui permet d'attendre le chargement de la page avant d'éxécuter le script principal
@@ -182,9 +83,9 @@ class App {
 	 */
 	static init() {
 		window.addEventListener("load", () => {
-			// this.etape1();
+			this.etape1();
 			// this.etape2();
-			this.etape3();
+			// this.etape3();
 			// this.etape4();
 		});
 	}

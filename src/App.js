@@ -182,10 +182,10 @@ class App {
 	 */
 	static init() {
 		window.addEventListener("load", () => {
-			// this.etape1();
-			// this.etape2();
+			this.etape1();
+			this.etape2();
 			this.etape3();
-			// this.etape4();
+			this.etape4();
 		});
 	}
 }

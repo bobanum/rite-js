@@ -1,5 +1,5 @@
-# Le "Rite de passage"
-**But du rite de passage** : Démontrer que l'on est capable de suivre des instructions simples et d'extrapoler ces connaissances dans divers contextes. Pour surmonter le rite de passage, l'élève devra être capable de recomposer n'importe quelle arborescence de balises HTML donnée par le professeur.
+# Le "rite de passage"
+**But du rite de passage** : Démontrer sa capacité à suivre des instructions simples et d'extrapoler ces directives dans divers contextes. Pour satisfaire au rite de passage, l'élève devra être capable de recomposer n'importe quelle arborescence de balises HTML donnée par le professeur.
 
 ## Étape 1 - La balise
 Ajouter des balises simples une à la suite de l'autre.
@@ -34,13 +34,16 @@ element.setAttribute(unAttribut, uneValeur);
 Les classes et les styles sont des attributs spéciaux : ils ont leurs propres mots-clés
 
 ### Les nouveaux mots-clés
-**En résumé** : `classList.add` et `style._propriete_`
+**En résumé** : `classList.add`, `style._propriete_` et `style.setProperty`
 ```javascript
-// Ajouter la classe uneClasse à element
+// Ajouter la classe uneClasse à element.
 element.classList.add(uneClass);
 
 // Ajouter une propriété CSS à element.
 element.style._propriete_ = "valeur de la propriété"
+
+// Ajouter une propriété CSS à element. Autre syntaxe.
+element.style.setProperty(unePropriete, uneValeur)
 ```
 **Note** : On remplacera la portion `_propriete_` par une version _camel case_ du nom de la propriété. Par exemple, on mettra `element.style.fontSize = "12px";` (à la place de `font-size`)
 

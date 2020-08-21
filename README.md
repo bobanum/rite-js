@@ -1,6 +1,16 @@
 # Le "rite de passage"
-**But du rite de passage** : Démontrer sa capacité à suivre des instructions simples et d'extrapoler ces directives dans divers contextes. Pour satisfaire au rite de passage, l'élève devra être capable de recomposer n'importe quelle arborescence de balises HTML donnée par le professeur.
+**But du rite de passage** : Démontrer sa capacité à suivre des instructions simples et à transposer ces directives dans divers contextes. 
 
+Pour satisfaire au rite de passage, **tous** les élèves devront être capables de recomposer n'importe quelle arborescence de balises HTML donnée par le professeur.
+
+---
+## Les vidéos
+
+Suivez le [tutoriel](https://www.youtube.com/watch?v=1gCWSWQ5ESE&list=PLR5YZQKvy9U1k3hdBGOQo24dw6ZokK-oK) incluant 5 vidéos
+
+[![Vidéo Youtube](https://img.youtube.com/vi/1gCWSWQ5ESE/0.jpg "Playlist Rite de passage")](https://www.youtube.com/watch?v=1gCWSWQ5ESE&list=PLR5YZQKvy9U1k3hdBGOQo24dw6ZokK-oK)
+
+---
 ## Étape 1 - La balise
 Ajouter des balises simples une à la suite de l'autre.
 
@@ -17,7 +27,7 @@ element = document.createElement(une_balise);
 elementParent.appendChild(elementEnfant); 
 
 // Définit le contenu HTML d'une balise
-element.innerHTML = "<b>Un certain code HTML</b>"
+element.innerHTML = "Un certain <b>code HTML</b>"
 ```
 
 ## Étape 2 - Les attributs
@@ -54,3 +64,20 @@ On doit maintenant imbriquer des balises nouvellement créées dans des balises 
 Aucun
 
 Il suffit de bien choisir l'élément auquel on applique le `appendChild`.
+
+## Autres notions utiles
+
+On peut combiner le `appendChild` et le `createElement` en une seule instruction:
+```javascript
+var h1 = app.appendChild(document.createElement("h1"));
+```
+
+On peut également utiliser `createTextNode` pour ajouter du texte à un élément: 
+```javascript
+h1.appendChild(document.createTextNode("mon texte"));
+```
+
+On peut utiliser `setProperty` pour modifier le style. On utilise alors le nom habituel de la propriété CSS:
+```javasctipt
+h1.style.setProperty("background-color", "black");
+```
